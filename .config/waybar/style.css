@@ -39,6 +39,13 @@
   margin: 6px 4px;
 }
 
+#custom-battery {
+  padding: 4px 8px;
+  background-color: #303643;
+  border-radius: 30px;
+  margin: 6px 4px;
+}
+
 #window {
   color: #929db1;
 }
@@ -82,10 +89,8 @@
 }
 
 #clock {
-  color: #fff;
+  /* color: #46F197; */
   margin-left: 8px;
-  /* opacity: 0.7; */
-  /* font-size: 18px; */
 }
 
 #custom-bluetooth {

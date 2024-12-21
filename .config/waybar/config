@@ -4,6 +4,7 @@
   "margin-bottom": 0,
   "modules-left": [
     "clock",
+    "custom/battery",
     "custom/network",
     "hyprland/workspaces",
     "tray"
@@ -107,7 +108,7 @@
   },
   "custom/network": {
     "exec": "~/.config/waybar/scripts/network_status.sh",
-    "interval": 30
+    "interval": 60
   },
   "custom/bluetooth": {
     "format": "{icon}",
@@ -116,5 +117,9 @@
       "off": "󰂯",
       "unknown": "󰂯"
     }
+  },
+  "custom/battery": {
+    "exec": "~/.config/waybar/scripts/battery_status.sh",
+    "interval": 60
   }
 }

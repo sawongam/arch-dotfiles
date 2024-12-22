@@ -10,7 +10,7 @@
     "tray"
   ],
   "modules-center": [
-    "hyprland/window"
+    "custom/spotify"
   ],
   "modules-right": [
     "temperature",
@@ -27,7 +27,7 @@
     "format": " {}",
     "rewrite": {
       "(\\d\\. )?(.*) - Chromium": "<span color=\"#4285F4\"></span>  $2 ",
-      "nvim (.*)": "<span color=\"#57A143\"></span>  $1",
+      "nvim (.*)": "<span coplayerctl nextlor=\"#57A143\"></span>  $1",
       "nvim": "<span color=\"#57A143\">  Neovim</span> ",
       "ranger(.*)": "<span color=\"#ffffff\"></span>  $1",
       "kitty (.*)": "<span color=\"#ffffff\"></span>  $1",
@@ -121,5 +121,12 @@
   "custom/battery": {
     "exec": "~/.config/waybar/scripts/battery_status.sh",
     "interval": 60
+  },
+  "custom/spotify": {
+    "exec": "~/.config/waybar/scripts/spotify_status.sh",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "interval": 10,
+    "tooltip": false
   }
 }

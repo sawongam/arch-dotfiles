@@ -104,3 +104,11 @@
 #custom-bluetooth {
   color: #61afef;
 }
+
+#custom-spotify {
+  padding: 4px 8px;
+  background-color: #303643;
+  border-radius: 30px;
+  margin: 6px 4px;
+  /* color: #61afef; */
+}

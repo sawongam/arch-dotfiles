@@ -16,8 +16,7 @@
     "temperature",
     "memory",
     "cpu",
-    "pulseaudio",
-    "custom/powermenu"
+    "pulseaudio"
   ],
   "tray": {
     "icon-size": 24,
@@ -75,11 +74,6 @@
   "cpu": {
     "format": " {usage}%",
     "tooltip": "false"
-  },
-  "custom/powermenu": {
-    "format": "",
-    "tooltip": false,
-    "on-click": "exec shutdown now"
   },
   "pulseaudio": {
     "format": "{volume}% {icon}",

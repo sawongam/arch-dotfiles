@@ -92,7 +92,7 @@
       ]
     },
     "scroll-step": 1,
-    "on-click": "pavucontrol"
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
   },
   "clock": {
     "format": "{:%H:%M}",
@@ -120,7 +120,7 @@
     "exec": "~/.config/waybar/scripts/spotify_status.sh",
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
-    "interval": 10,
+    "interval": 1,
     "tooltip": false
   }
 }

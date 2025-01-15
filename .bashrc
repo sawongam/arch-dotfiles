@@ -22,8 +22,9 @@ export VISUAL=nano
 
 alias f='killall msedge && poweroff'
 alias s='systemctl suspend & swaylock'
-alias bootorder='sudo efibootmgr -o 0001,0000,2001,2002,2003'
+alias bootorder='sudo efibootmgr -o 0001,0003,2001,2002,2003'
 alias mountc='sudo mount /dev/nvme0n1p2 /mnt/c'
 alias mountd='sudo  mount /dev/nvme0n1p4 /mnt/d'
 
 alias pods='~/.config/hypr/scripts/connect_airpods.sh'
+alias nopods='sudo systemctl stop bluetooth.service'

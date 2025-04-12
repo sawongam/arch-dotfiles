@@ -2,14 +2,25 @@
 <actions>
 <action>
 	<icon>utilities-terminal</icon>
-	<name>Open Terminal Here</name>
+	<name>Open Terminal</name>
 	<submenu></submenu>
 	<unique-id>1734845215705372-1</unique-id>
 	<command>kitty --directory %f</command>
-	<description>Example for a custom action</description>
+	<description></description>
 	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>visual-studio-code</icon>
+	<name>Open VS Code</name>
+	<submenu></submenu>
+	<unique-id>1744313961168066-1</unique-id>
+	<command>code %f &amp;&amp; pkill thunar</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
 	<directories/>
 </action>
 </actions>
